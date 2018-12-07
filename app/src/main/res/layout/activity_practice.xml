@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5.4"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.gamestolearnenglish.chineseinflow.PracticeActivity">
+
+    <TextView
+        android:id="@+id/activityPracticeText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:padding="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/disp_back"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:text="Main" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/activityPracticeButton0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tar_back_selector"
+            android:onClick="buttonClick"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#333"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/activityPracticeButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/tar_back_selector"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:textSize="22sp"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/activityPracticeButton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tar_back_selector"
+            android:textSize="22sp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:padding="8dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/activityPracticeButton3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="@drawable/tar_back_selector"
+            android:textSize="22sp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:padding="4dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/activityPracticeButton4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tar_back_selector"
+            android:textSize="22sp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:padding="8dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/activityPracticeButton5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tar_back_selector"
+            android:textSize="22sp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:padding="8dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/activityPracticeButton6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/tar_back_selector"
+            android:textSize="22sp"
+            android:textColor="#333"
+            android:onClick="buttonClick"
+            android:padding="8dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/settingsBut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:layout_marginLeft="4dp"
+            android:onClick="settingsClick"
+            android:src="@drawable/settings_but" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"/>
+
+        <fragment
+            android:id="@+id/activityPracticeFragment"
+            android:name="com.gamestolearnenglish.chineseinflow.CountDownFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.66" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"/>
+
+        <ImageView
+            android:id="@+id/audBut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.12"
+            android:onClick="audClick"
+            android:src="@drawable/aud_but" />
+
+    </LinearLayout>
+
+</LinearLayout>

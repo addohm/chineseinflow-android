@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ChineseInFlow</string>
+    <item name="databaseVersion" format="integer" type="integer">28</item>
+    <string name="title_activity_learn_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_learn">LearnActivity</string>
+    <string name="title_activity_review">ReviewActivity</string>
+    <string name="end_activity_info_learn">Well done. You have completed learning this set of characters. Tap the return button to go back to the main menu. You can review this set of characters or move on to learn the next set of characters.</string>
+    <string name="end_activity_info_practice_complete">Congratulations. You have fully finished practicing this set of characters with a perfect score. Tap the return button to go back to the main menu or tap the again button to practice again.</string>
+    <string name="end_activity_info_practice_timeout">You ran out of time. Tap the return button to go back to the main menu or tap the again button to practice again.</string>
+    <string name="end_activity_info_practice_sdtimeout">Congratulations. You have finished practicing this set of characters. You ran out of time at the end so you may want to try again.</string>
+    <string name="end_activity_info_practice_sdmiss">Congratulations. You have finished practicing this set of characters. You made a mistake at the end so you may want to try again.</string>
+    <string name="end_activity_info_review">Well done. You have successfully reviewed this set of characters. Tap the return button to go back to the main menu or tap the again button to review again.</string>
+    <string name="title_activity_end">EndActivity</string>
+    <string name="title_activity_practice">PracticeActivity</string>
+    <string name="title_activity_settings_learn">SettingsActivityLearn</string>
+    <string name="title_activity_settings_practice">SettingsActivityPractice</string>
+    <string name="title_activity_settings_review"><Setting></Setting>sActivityReview</string>
+</resources>

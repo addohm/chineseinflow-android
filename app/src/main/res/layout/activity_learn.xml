@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gamestolearnenglish.chineseinflow.LearnActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="10"
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/activityLearnMainText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/disp_back"
+            android:textSize="70sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Main" />
+
+        <ImageView
+            android:id="@+id/audButBig"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:src="@drawable/aud_but_large"
+            android:onClick="audClick"
+            android:gravity="center"
+            android:padding="34dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/learnLay0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="3.3" >
+
+            <ImageView
+                android:id="@+id/activityLearnHintDummy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/learnButton0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#222"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/learnButton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#222"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/learnButton2"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/activityLearnHint"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/hint"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/learnLay1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3.3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/learnButton3"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/learnButton4"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/learnLay2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="3.3">
+
+            <Button
+                android:id="@+id/learnButton5"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp"  />
+
+            <Button
+                android:id="@+id/learnButton6"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/learnButton7"
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/tar_back_selector"
+                android:onClick="buttonClick"
+                android:gravity="center"
+                android:textColor="#222"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.8"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/settingsBut"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings_but"
+            android:onClick="settingsClick"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/audBut"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aud_but"
+            android:onClick="audClick"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

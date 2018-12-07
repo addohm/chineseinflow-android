@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:weightSum="4.2"
+    tools:context="com.gamestolearnenglish.chineseinflow.ReviewActivity">
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.5"
+	    android:weightSum="1"
+	    android:layout_marginBottom="5dp"
+	    android:gravity="center">
+
+	    <TextView
+	        android:id="@+id/activityReviewTopText"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	   		android:layout_weight="0.8"
+	        android:text="Review"
+	        android:background="@drawable/disp_back"
+	    	android:gravity="center"
+	    	android:textStyle="bold"
+	        android:textSize="100sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/activityReviewMiddleLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_margin="0dp"
+	    android:layout_weight="1.5"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center"
+	    android:weightSum="1" >
+    
+	    	<LinearLayout
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_weight="0.8"
+	    	    android:background="@drawable/disp_back"
+	    	    android:gravity="center"
+	    	    android:orientation="vertical"
+	    	    android:padding="12dp" >
+
+			    <TextView
+			        android:id="@+id/activityReviewRevealedLine0"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+	    	    	android:gravity="center"
+			        android:textSize="50sp"
+			        android:text="one" />
+	
+			    <TextView
+			        android:id="@+id/activityReviewRevealedLine1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+	    	    	android:gravity="center"
+			        android:textSize="40sp"
+			        android:textStyle="bold"
+			        android:text="two" />
+		    
+	    </LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_weight="0.8"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:paddingLeft="64dp"
+	    android:paddingRight="64dp" >
+	
+		<TextView
+		    android:id="@+id/activityReviewRoundText"
+	 	   	android:layout_width="0dp"
+	 	   	android:layout_weight="1"
+	        android:layout_height="match_parent"
+	    	android:gravity="center"
+	    	android:textStyle="bold"
+	        android:textSize="30sp"
+		    android:text="1/30" />
+	
+	    <Button
+	        android:id="@+id/activityReviewButGood"
+	 	   	android:layout_width="0dp"
+	 	   	android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:text="Good"
+	        android:onClick="goodClick"
+			android:gravity="center"
+	    	android:background="@drawable/blank_button_selector"
+	        android:textColor="#fff"
+	        android:textSize="24sp"/>
+
+	    <Button
+	        android:id="@+id/activityReviewButAgain"
+	 	   	android:layout_width="0dp"
+	 	   	android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:text="Again"
+	        android:onClick="againClick"
+			android:gravity="center"
+	    	android:background="@drawable/blank_button_selector"
+	        android:textColor="#fff"
+	        android:textSize="24sp"/>
+	</LinearLayout>
+	
+	<RelativeLayout
+       	android:layout_width="match_parent"
+	    android:layout_weight="0.4"
+       	android:layout_height="0dp">
+        <ImageView 
+            android:id="@+id/settingsBut"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/settings_but_large" 
+	        android:onClick="settingsClick"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentBottom="true"
+            />
+
+       <TextView
+           android:id="@+id/bottomText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:gravity="center"
+           android:text=""
+           android:textColor="#333"
+           android:textSize="24sp" />
+       
+        <ImageView 
+            android:id="@+id/audBut"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/aud_but_large"
+	        android:onClick="audClick"
+        	android:layout_alignParentRight="true"
+        	android:layout_alignParentBottom="true"
+            />
+   </RelativeLayout>
+
+</LinearLayout>

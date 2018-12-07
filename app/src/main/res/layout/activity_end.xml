@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="13.0"
+    tools:context="com.gamestolearnenglish.chineseinflow.EndActivity">
+
+    <TextView
+        android:textSize="30.0sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@+id/activityEndTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Review Completed"
+        android:shadowColor="#ff000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="0.1"
+        android:layout_weight="1.6" />
+
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@+id/activityEndInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Well done.  You have completed learning this set of characters."
+        android:shadowColor="#ff000000"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.1"
+        android:layout_weight="2.0" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@+id/activityEndSummaryText0"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="2dp"
+        android:text="Review Completed"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.1"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@+id/activityEndSummaryText1"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:text="Review Completed"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.1"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="14.0dip"
+        android:weightSum="1.0"
+        android:layout_weight="1.7">
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ffffffff"
+            android:id="@+id/activityEndBackButton"
+            android:background="@drawable/blank_button_selector"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Return"
+            android:layout_weight="0.6"
+            android:onClick="backClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:weightSum="1.0"
+        android:layout_weight="1.7">
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ffffffff"
+            android:id="@+id/activityEndAgainButton"
+            android:background="@drawable/blank_button_selector"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Again"
+            android:layout_weight="0.6"
+            android:onClick="againClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/activityEndRateLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:weightSum="1.0"
+        android:visibility="gone"
+        android:layout_weight="1.7">
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="#ffffffff"
+            android:id="@+id/activityEndFeedbackButton"
+            android:background="@drawable/blank_button_selector"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Rate App"
+            android:layout_weight="0.6"
+            android:onClick="feedbackClick" />
+    </LinearLayout>
+
+</LinearLayout>

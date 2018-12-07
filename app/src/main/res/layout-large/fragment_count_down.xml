@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.gamestolearnenglish.chineseinflow.CountDownFragment">
+
+    <ProgressBar
+        android:id="@+id/activityCountDownProgressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:indeterminateOnly="false"
+        android:max="300"
+        android:progressDrawable="@drawable/progress_style" />
+
+    <ImageView
+        android:background="@drawable/countdown_border_large"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        />
+
+</RelativeLayout>
